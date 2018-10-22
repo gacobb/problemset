@@ -9,10 +9,14 @@ max = 0
 for line in f:
 	print(line)
 	line = f.readline()
-	num = float(line.split(",")[1])
+	num = float(line.split(",")[1]) #This line produces error "could not convert string to float", but still produces correct answer
 	if (max < num):
 		max = num
+		date = (line.split(",")[0])
+#print maximum water level and date and time
 print(max)
+print(date)
+
 
 #problem 2
 import pandas as pd
